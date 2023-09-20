@@ -1,5 +1,6 @@
 ---
 import "../../css/base.css";
+import Navigation from "../components/Navigation.vue"
 interface Props {
 	title: string;
 }
@@ -18,7 +19,9 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
+		<Navigation id="navigation" client:load/>
 		<slot />
+		<!-- <Footer client:load/> -->
 	</body>
 </html>
 <style is:global>
