@@ -1,0 +1,37 @@
+<script setup lang="ts">
+
+// reactive props
+defineProps<{
+  kind: string,
+  type: string,
+  value?: string,
+  error?: boolean,
+  disabled?: boolean,
+}>()
+
+
+</script>
+
+<template>
+  <button class="w-full px-6 py-5 border-[1px] border-system-neutral-200 rounded-full outline-none btn">
+    <span>
+      <slot></slot>
+    </span>
+    <span class="text-paragraph-1">Add to cart</span>
+  </button>
+</template>
+
+<style scoped>
+  .btn {
+    box-shadow: 0 4px 10px 0 rgba(20, 20, 43, 0.04);
+    transition: border-color 300ms ease, transform 300ms ease, background-color 300ms ease, color 300ms ease;
+    transform-style: preserve-3d;
+    @apply text-system-neutral-700;
+  }
+  .btn:hover {
+    border-color: #ff3f3f;
+    background-color: #ff3f3f;
+    transform: translate3d(0px, -3px, 0.01px);
+    color: #fff;
+  }
+</style>
