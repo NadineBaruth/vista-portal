@@ -1,12 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import VideoTeaser from "../components/sections/VideoTeaser.vue";
+import HeaderSection from "../components/sections/HeaderSection.astro";
+import InformationSection from "../components/sections/InformationSection.astro";
+import ReservationCard from "../components/ReservationCard.vue";
 ---
 
 <Layout title="Welcome to Astro.">
-
-	<div class="relative container mx-auto lg:mt-2 md:mt-12 mt-5">
-		<VideoTeaser client:load />
+	<div>
+		<HeaderSection></HeaderSection>
 	</div>
 </Layout>
 
