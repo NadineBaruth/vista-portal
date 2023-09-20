@@ -3,3 +3,121 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* Defining font family */
+@font-face {
+    font-family: "DMSans";
+    src: url("public/fonts/DMSans-Thin.ttf");
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: "DMSans";
+    src: url("public/fonts/DMSans-ThinItalic.ttf");
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "DMSans";
+    src: url("public/fonts/DMSans-Thin.ttf");
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: "DMSans";
+    src: url("public/fonts/DMSans-ThinItalic.ttf");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "DMSans";
+    src: url("public/fonts/DMSans-Light.ttf");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "DMSans";
+    src: url("public/fonts/DMSans-LightItalic.ttf");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "DMSans";
+    src: url("public/fonts/DMSans-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "DMSans";
+    src: url("public/fonts/DMSans-Italic.ttf");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "DMSans";
+    src: url("public/fonts/DMSans-Medium.ttf");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "DMSans";
+    src: url("public/fonts/DMSans-MediumItalic.ttf");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "DMSans";
+    src: url("public/fonts/DMSans-SemiBold.ttf");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "DMSans";
+    src: url("public/fonts/DMSans-SemiBoldItalic.ttf");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "DMSans";
+    src: url("public/fonts/DMSans-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "DMSans";
+    src: url("public/fonts/DMSans-BoldItalic.ttf");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "DMSans";
+    src: url("public/fonts/DMSans-ExtraBold.ttf");
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: "DMSans";
+    src: url("public/fonts/DMSans-ExtraBoldItalic.ttf");
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "DMSans";
+    src: url("public/fonts/DMSans-Black.ttf");
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: "DMSans";
+    src: url("public/fonts/DMSans-BlackItalic.ttf");
+    font-weight: 900;
+    font-style: italic;
+}
