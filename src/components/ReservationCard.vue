@@ -29,8 +29,8 @@ const link = ref("")
         <Input name="Personen" type="number" value="7"></Input>
       </div>
     </div>
-    <div class="mt-1">
-      <Button></Button>
+    <div class="mt-2">
+      <Button variant="secondary"></Button>
     </div>
     <div class="flex justify-center items-center my-10">
       <div class="h-[1px] bg-system-neutral-300 w-full"></div>
@@ -38,7 +38,7 @@ const link = ref("")
       <div class="h-[1px] bg-system-neutral-300 w-full"></div>
     </div>
     <div>
-      <Button></Button>
+      <Button variant="primary"></Button>
     </div>
   </div>
 </template>

@@ -2,7 +2,7 @@
 
 // reactive props
 defineProps<{
-  kind: string,
+  variant: string, // primary | secondary
   type: string,
   value?: string,
   error?: boolean,
@@ -13,7 +13,10 @@ defineProps<{
 </script>
 
 <template>
-  <button class="w-full px-6 py-5 border-[1px] border-system-neutral-200 rounded-full outline-none btn">
+  <button class="w-full px-6 py-5 border-[1px] rounded-full outline-none btn"
+          :class="{ 'bg-system-neutral-800 text-system-neutral-100 hover:border-primary hover:bg-primary hover:text-white' : variant === 'primary',
+          'border-system-neutral-200 text-system-neutral-700 hover:border-primary hover:bg-primary hover:text-white' : variant === 'secondary'
+  }">
     <span>
       <slot></slot>
     </span>
@@ -26,12 +29,8 @@ defineProps<{
     box-shadow: 0 4px 10px 0 rgba(20, 20, 43, 0.04);
     transition: border-color 300ms ease, transform 300ms ease, background-color 300ms ease, color 300ms ease;
     transform-style: preserve-3d;
-    @apply text-system-neutral-700;
   }
   .btn:hover {
-    border-color: #ff3f3f;
-    background-color: #ff3f3f;
     transform: translate3d(0px, -3px, 0.01px);
-    color: #fff;
   }
 </style>
