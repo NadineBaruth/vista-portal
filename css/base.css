@@ -121,3 +121,63 @@
     font-weight: 900;
     font-style: italic;
 }
+
+
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
+/* Swiper */
+
+.swiper-wrapper {
+    @apply flex;
+    @apply items-center;
+}
+
+.swiper-slide {
+    transition: all;
+}
+
+/*
+.swiper-slide-active {
+    filter: blur(0px) !important;
+    !*@apply scale-105;*!
+}
+*/
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: white;
+    background-position: center;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    padding: 8px 16px;
+    border-radius: 100%;
+    border: 2px solid black;
+    color: red;
+}
+
+.swiper-button-prev {
+    /* background-image: url(); */
+}
+
+.swiper-button-next {
+    /* background-image: url(); */
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: "";
+}
+
+.swiper-pagination-bullets {
+    margin-bottom: 0;
+}
