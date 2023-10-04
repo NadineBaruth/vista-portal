@@ -1,9 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import VideoTeaser from "../components/sections/VideoTeaser.vue";
 import HeaderSection from "../components/sections/HeaderSection.astro";
 import InformationSection from "../components/sections/InformationSection.astro";
 import AmenitiesSection from "../components/sections/AmenitiesSection.astro";
+import ActivitiesSection from "../components/sections/ActivitiesSection.astro";
+import GallerySection from "../components/sections/GallerySection.vue";
+import AboutUsSection from "../components/sections/AboutUsSection.astro";
+import FaqSection from "../components/sections/FaqSection.vue";
+import Footer from "../components/Footer.astro";
 import ReservationCard from "../components/ReservationCard.vue";
 ---
 
@@ -18,20 +22,33 @@ import ReservationCard from "../components/ReservationCard.vue";
 		<div class="container px-4 lg:flex mx-auto pb-20">
 			<div class="lg:w-3/5 w-full pb-36">
 				<InformationSection></InformationSection>
-				<div class="h-[1px] bg-system-neutral-300 my-20"></div>
-				<AmenitiesSection></AmenitiesSection>
 			</div>
 			<div class="lg:w-2/5 w-full relative px-10 lg:-mt-[25rem]">
-				<ReservationCard></ReservationCard>
+				<ReservationCard client:load></ReservationCard>
 			</div>
 		</div>
 	</div>
-	<div class="bg-system-neutral-100 h-80">
-		<div class="container px-4 mx-auto"></div>
+	<div class="bg-system-neutral-100 py-20">
+		<div class="">
+			<GallerySection client:load></GallerySection>
+		</div>
+		<div class="container px-4 lg:flex mx-auto pb-20 mb-20 mt-32">
+			<div class="h-[1px] bg-system-neutral-300 my-20"></div>
+			<AmenitiesSection></AmenitiesSection>
+		</div>
+		<div class="container px-4 lg:flex mx-auto pb-20 mb-20 mt-32">
+			<AboutUsSection></AboutUsSection>
+		</div>
+		<div class="mt-40">
+			<ActivitiesSection></ActivitiesSection>
+		</div>
+		<div class="container px-4 lg:flex mx-auto pb-20 mb-20 mt-32">
+			<FaqSection client:load></FaqSection>
+		</div>
+		<div>
+			<Footer></Footer>
+		</div>
 	</div>
-	<!--<div class="relative container mx-auto lg:mt-2 md:mt-12 mt-5">
-		<VideoTeaser client:load />
-	</div>-->
 </Layout>
 
 <style>
