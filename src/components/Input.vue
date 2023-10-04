@@ -1,28 +1,30 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
-import IntersectionObserver from "./IntersectionObserver.vue";
 
-// reactive props
+
 defineProps<{
-  name: string,
-  type: string,
-  value?: string,
-  error?: boolean,
-  disabled?: boolean,
+  name: string
+  type: string
+  error?: boolean
+  disabled?: boolean
+  modelValue: string | number;
 }>()
+
+defineEmits(["update:modelValue"]);
+
 
 </script>
 
 <template>
   <div>
-    <label class="font-bold text-system-neutral-800 ml-1" for="test">{{ name }}</label>
+    <label class="font-bold text-system-neutral-800 ml-1" :for="name">{{ name }}</label>
     <div class="mt-2">
       <input
+          @input="$emit('update:modelValue', ($event.target as HTMLInputElement).value)"
           :type="type"
           :name="name"
           :id="name"
+          :value="modelValue"
           :disabled="disabled"
-          v-model="value"
           class="text-system-neutral-400 w-full px-6 py-5 border-[1px] border-system-neutral-200 rounded-full input text-paragraph-1 outline-none"
       />
     </div>

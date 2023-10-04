@@ -3,9 +3,16 @@ import { ref } from 'vue'
 import Input from "./Input.vue"
 import Button from "./Button.vue";
 
-// reactive state
-const link = ref("")
+const nights = ref(7);
+const persons = ref(2);
 
+// output value key by key
+const onNightInput = (e: { target: { value: string } }) => {
+  nights.value = e.target.value;
+};
+const onPersonInput = (e: { target: { value: string } }) => {
+  nights.value = e.target.value;
+};
 
 
 </script>
@@ -23,10 +30,10 @@ const link = ref("")
     </div>
     <div class="flex space-x-4 mt-10">
       <div class="w-2/3">
-        <Input name="Nights" type="number" value="7"></Input>
+        <Input v-model="nights" @input="onNightInput" name="Nights" type="number" :model-value="nights"></Input>
       </div>
       <div class="w-1/3">
-        <Input name="Personen" type="number" value="7"></Input>
+        <Input v-model="nights" @input="onPersonInput" name="Personen" type="number" :model-value="persons"></Input>
       </div>
     </div>
     <div class="mt-2">
