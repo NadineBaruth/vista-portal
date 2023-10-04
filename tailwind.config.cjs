@@ -46,9 +46,9 @@ module.exports = {
 			},
 		},
 		fontSize: {
-			bodySmall: ['24px', '1.583em'],
+			bodyLarge: ['24px', '1.583em'],
 			bodyDefault: ['18px', '1.667x'],
-			bodyLarge: ['14px', '1.714px'],
+			bodySmall: ['14px', '1.714px'],
 			blockquote: ['24px', '1.667px'],
 			"display-1": ['90px', '1.044em'],
 			"display-2": ['62px', '1.161px'],
