@@ -65,6 +65,16 @@ module.exports = {
 			"paragraph-3": ['20px', '1.1em'],
 			"paragraph-4": ['24px', '1.083em'],
 		},
+		container: {
+			center: true,
+			padding: {
+				DEFAULT: '1rem',
+				sm: '2rem',
+				lg: '3rem',
+				xl: '4rem',
+				'2xl': '12rem',
+			},
+		},
 	},
 	plugins: [],
 }

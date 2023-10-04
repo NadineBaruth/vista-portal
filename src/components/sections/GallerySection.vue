@@ -73,7 +73,7 @@ function nextImg() {
 
 <template>
   <section class="w-full">
-    <div class="container px-4 mx-auto">
+    <div class="container">
       <h3 class="text-heading-2 text-system-neutral-800 font-bold leading-7">Schau dich um!</h3>
       <p class="text-neutral-600 text-paragraph-2 mt-6 leading-7 w-3/5">Lorem ipsum dolor sit amet consectetur adipiscing elit etiam cras tellus sit tempor amet, nascetur quam ornare proin platea diam amet sed fringilla.</p>
       <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 w-full gap-5 mt-20">
