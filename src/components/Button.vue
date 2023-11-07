@@ -4,7 +4,7 @@
 defineProps<{
   variant: string, // primary | secondary
   type: string,
-  value?: string,
+  value: string,
   error?: boolean,
   disabled?: boolean,
 }>()
@@ -20,7 +20,7 @@ defineProps<{
     <span>
       <slot></slot>
     </span>
-    <span class="text-paragraph-1">Add to cart</span>
+    <span class="text-paragraph-1">{{ value }}</span>
   </button>
 </template>
 

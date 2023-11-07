@@ -20,10 +20,10 @@ import ReservationCard from "../components/ReservationCard.vue";
 			<div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
 		</div>
 		<div class="container lg:flex pb-20">
-			<div class="lg:w-3/5 w-full pb-36">
+			<div class="lg:w-3/5 w-full lg:pb-36 pb-16">
 				<InformationSection></InformationSection>
 			</div>
-			<div class="lg:w-2/5 w-full relative px-10 lg:-mt-[25rem]">
+			<div class="lg:w-2/5 w-full relative lg:px-10 px-0 lg:-mt-[25rem]">
 				<ReservationCard client:load></ReservationCard>
 			</div>
 		</div>
@@ -32,17 +32,16 @@ import ReservationCard from "../components/ReservationCard.vue";
 		<div class="">
 			<GallerySection client:load></GallerySection>
 		</div>
-		<div class="container pb-20 mb-20 mt-32">
-			<div class="h-[1px] bg-system-neutral-300 my-20"></div>
+		<div class="container pb-20 lg:h-screen h-full flex items-center 2xl:-mt-24 xl:mt-12 mt-16">
 			<AmenitiesSection></AmenitiesSection>
 		</div>
-		<div class="container pb-20 mb-20 mt-32">
+		<div class="container pb-20 mb-20 2xl:mt-0 mt-16">
 			<AboutUsSection></AboutUsSection>
 		</div>
 		<div class="mt-40">
 			<ActivitiesSection></ActivitiesSection>
 		</div>
-		<div class="container pb-20 mb-20 mt-32">
+		<div class="container lg:pb-20 pb-0 mb-20 mt-16">
 			<FaqSection client:load></FaqSection>
 		</div>
 		<div>

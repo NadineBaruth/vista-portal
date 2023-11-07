@@ -18,14 +18,14 @@ const onPersonInput = (e: { target: { value: string } }) => {
 </script>
 
 <template>
-  <div class="lg:sticky relative lg:top-10 lg:inset-x-0 w-full bg-white rounded-3xl test py-12 px-10">
+  <div class="lg:sticky relative lg:top-10 lg:inset-x-0 w-full bg-white rounded-3xl test py-10 px-8">
     <h4 class="text-neutral-800 text-heading-3 font-bold">Reserviere jetzt!</h4>
-    <p class="text-neutral-600 text-paragraph-2 leading-7">Lorem ipsum dolor sit amet consectetur adipiscing elit etiam cras tellus sit.</p>
+    <p class="text-neutral-600 text-paragraph-2">Lorem ipsum dolor sit amet consectetur adipiscing elit etiam cras tellus sit.</p>
     <div class="mt-10">
-      <span class="text-neutral-600 text-paragraph-2 mt-6 leading-7 mb-2 block">Jetzt ab</span>
+      <span class="text-neutral-600 text-paragraph-2 mt-6 mb-2 block">Jetzt ab</span>
       <div>
         <span class="text-display-4 text-neutral-800 font-bold">120,00€</span>
-        <span class="text-neutral-500 text-paragraph-2 mt-6 leading-7 ml-1 font-medium">/pro Nacht</span>
+        <span class="text-neutral-500 text-paragraph-2 mt-6 ml-1 font-medium">/pro Nacht</span>
       </div>
     </div>
     <div class="flex space-x-4 mt-10">
@@ -37,7 +37,7 @@ const onPersonInput = (e: { target: { value: string } }) => {
       </div>
     </div>
     <div class="mt-2">
-      <Button variant="secondary"></Button>
+      <Button variant="secondary" value="Jetzt buchen"></Button>
     </div>
     <div class="flex justify-center items-center my-10">
       <div class="h-[1px] bg-system-neutral-300 w-full"></div>
@@ -45,7 +45,7 @@ const onPersonInput = (e: { target: { value: string } }) => {
       <div class="h-[1px] bg-system-neutral-300 w-full"></div>
     </div>
     <div>
-      <Button variant="primary"></Button>
+      <Button variant="primary" value="Über Airbnb buchen"></Button>
     </div>
   </div>
 </template>

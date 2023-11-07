@@ -21,7 +21,7 @@ console.log(`The initial count is ${isVisible.value}.`)
       :threshold="0.8"
       @isVisible="handleIsVisible"
   >
-    <header class="absolute inset-x-0 top-8 z-50 flex justify-center" :class="isVisible ? 'sm:transform sm:opacity-100 duration-200 ease-in' : 'sm:transform sm:opacity-0 sm:-translate-y-4 duration-200 ease-in'">
+    <header class="container absolute inset-x-0 top-8 z-50 flex justify-center" :class="isVisible ? 'sm:transform sm:opacity-100 duration-200 ease-in' : 'sm:transform sm:opacity-0 sm:-translate-y-4 duration-200 ease-in'">
       <nav class="flex items-center justify-between p-6 lg:px-8 bg-white w-2/3 rounded-full" aria-label="Global">
         <div class="flex lg:flex-1">
           <a href="#" class="-m-1.5 p-1.5">

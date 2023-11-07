@@ -6,12 +6,12 @@
       slides-per-view="1.15"
       :breakpoints="{
         320: {
-          slidesPerView: 2,
+          slidesPerView: 1.25,
           spaceBetween: 30
         },
         // when window width is >= 480px
         480: {
-          slidesPerView: 2,
+          slidesPerView: 1.25,
           spaceBetween: 20
         },
         // when window width is >= 640px
@@ -39,8 +39,8 @@
       :coverflow-effect="{
         rotate: 0,
         stretch: 0,
-        depth: 20,
-        modifier: 1,
+        depth: 100,
+        modifier: 2,
         slideShadows: true
       }"
       :keyboard="{
@@ -49,11 +49,10 @@
       :mousewheel="{
         thresholdDelta: 70
       }"
-      :pagination="{ clickable: true }"
       :modules="modules"
       class="h-[700px]"
   >
-    <swiper-slide v-for="item in activityList" class="relative w-[24rem] h-[30rem] activity-card rounded-xl">
+    <swiper-slide v-for="item in activityList" class="relative w-auto h-[30rem] activity-card rounded-xl">
       <div class="w-full h-full rounded-xl flex items-end">
         <div class="absolute inset-0 w-full h-full">
           <img class="object-cover w-full h-full rounded-xl" :src="item.imageSrc" alt="">
@@ -61,7 +60,7 @@
         </div>
         <div class="w-full relative pb-6">
           <span class="uppercase text-white bg-[#087ac4] inline-block py-1.5 pl-7 pr-5 rounded-r-2xl text-[0.8rem] tracking-widest">domestic</span>
-          <h2 class="mt-6 text-white px-6 text-paragraph-3 w-4/5 font-normal leading-6">
+          <h2 class="mt-6 text-white px-6 text-paragraph-3 w-4/5 font-normal">
             {{ item.activity }}
           </h2>
           <p class="flex text-white font-light pl-5 mt-5">
